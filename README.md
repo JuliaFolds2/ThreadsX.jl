@@ -107,3 +107,4 @@ Most of `reduce`-based functions are implemented as thin wrappers of
 Custom collections can support ThreadsX.jl API by implementing
 [`SplittablesBase.jl`](https://github.com/JuliaFolds2/SplittablesBase.jl)
 interface.
+
