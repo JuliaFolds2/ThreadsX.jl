@@ -24,12 +24,12 @@ makedocs(;
     pages=[
         "Home" => "index.md",
     ],
-    repo="https://github.com/tkf/ThreadsX.jl/blob/{commit}{path}#L{line}",
+    # repo="https://github.com/tkf/ThreadsX.jl/blob/{commit}{path}#L{line}",
     sitename="ThreadsX.jl",
     authors="Takafumi Arakaki <aka.tkf@gmail.com>",
 )
 
 deploydocs(;
-    repo="github.com/tkf/ThreadsX.jl",
+    repo="github.com/JuliaFolds2/ThreadsX.jl",
     push_preview = should_push_preview(),
 )
