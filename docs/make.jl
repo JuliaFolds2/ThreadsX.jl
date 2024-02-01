@@ -24,6 +24,7 @@ makedocs(;
     pages=[
         "Home" => "index.md",
     ],
+    warnonly = true,
     # repo="https://github.com/tkf/ThreadsX.jl/blob/{commit}{path}#L{line}",
     sitename="ThreadsX.jl",
     authors="Takafumi Arakaki <aka.tkf@gmail.com>",

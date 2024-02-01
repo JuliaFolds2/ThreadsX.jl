@@ -8,7 +8,7 @@ Sort a vector `xs` in parallel.
 julia> using ThreadsX
 
 julia> ThreadsX.sort!([9, 5, 2, 0, 1])
-5-element Array{Int64,1}:
+5-element Vector{Int64}:
  0
  1
  2
@@ -16,7 +16,7 @@ julia> ThreadsX.sort!([9, 5, 2, 0, 1])
  9
 
 julia> ThreadsX.sort!([0:5;]; alg = ThreadsX.StableQuickSort, by = _ -> 1)
-6-element Array{Int64,1}:
+6-element Vector{Int64}:
  0
  1
  2
@@ -30,7 +30,7 @@ to be one of the parallel sort algorithms provided by ThreadsX:
 
 ```julia
 julia> sort!([9, 5, 2, 0, 1]; alg = ThreadsX.MergeSort)
-5-element Array{Int64,1}:
+5-element Vector{Int64}:
  0
  1
  2
