@@ -47,7 +47,7 @@ using ConstructionBase: setproperties
 using InitialValues: asmonoid
 using MicroCollections: EmptyVector
 using Referenceables: referenceable
-using Setfield: @set
+using Accessors: @set
 using Transducers:
     Cat,
     Empty,
