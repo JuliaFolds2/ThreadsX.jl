@@ -1,8 +1,7 @@
 # Threads⨉: Parallelized `Base` functions
 
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://tkf.github.io/ThreadsX.jl/dev)
-[![GitHub Actions](https://github.com/tkf/ThreadsX.jl/workflows/Run%20tests/badge.svg)](https://github.com/tkf/ThreadsX.jl/actions?query=workflow%3A%22Run+tests%22)
-[![Aqua QA](https://raw.githubusercontent.com/JuliaTesting/Aqua.jl/master/badge.svg)](https://github.com/JuliaTesting/Aqua.jl)
+[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliafolds2.github.io/ThreadsX.jl/stable)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliafolds2.github.io/ThreadsX.jl/dev)
 
 ## tl;dr
 
@@ -33,7 +32,7 @@ all             findall         map             prod            unique
 ### Rich collection support
 
 The `reduce`-based functions support any collections that implement
-[`SplittablesBase.jl`](https://github.com/JuliaFolds/SplittablesBase.jl)
+[`SplittablesBase.jl`](https://github.com/JuliaFolds2/SplittablesBase.jl)
 interface including arrays, `Dict`, `Set`, and iterator
 transformations.  In particular, these functions support iterator
 comprehension:
@@ -44,7 +43,7 @@ julia> ThreadsX.sum(y for x in 1:10 if isodd(x) for y in 1:x^2)
 ```
 
 For advanced usage, they also support
-[`Transducers.eduction`](https://juliafolds.github.io/Transducers.jl/dev/manual/#Transducers.eduction)
+[`Transducers.eduction`](https://juliafolds2.github.io/Transducers.jl/dev/reference/manual/#Transducers.eduction)
 constructed with parallelizable transducers.
 
 ### OnlineStats.jl
@@ -103,8 +102,8 @@ value, `basesize` must be specified explicitly.
 ## Implementations
 
 Most of `reduce`-based functions are implemented as thin wrappers of
-[`Transducers.jl`](https://github.com/JuliaFolds/Transducers.jl).
+[`Transducers.jl`](https://github.com/JuliaFolds2/Transducers.jl).
 
 Custom collections can support ThreadsX.jl API by implementing
-[`SplittablesBase.jl`](https://github.com/JuliaFolds/SplittablesBase.jl)
+[`SplittablesBase.jl`](https://github.com/JuliaFolds2/SplittablesBase.jl)
 interface.
